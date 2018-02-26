@@ -8,9 +8,9 @@ let app = require('../app');
 
 let HOST = '127.0.0.1';
 
-app.set('port', process.env.PORT || 8000);
-
 app.set('host', process.env.HOST || HOST);
+
+app.set('port', process.env.PORT || 8000);
 
 app.listen(app.get('port'), function () {
 	debug("the server is running on ", app.get('port'));
