@@ -1,0 +1,94 @@
+@import "../../fonts/Atomic_Age/AtomicAge-Regular.css";
+@import "../../fonts/Black_Ops_One/BlackOpsOne-Regular.css";
+@import "../../fonts/Bungee/Bungee-Regular.css";
+@import "../../fonts/Orbitron/Orbitron-Regular.css";
+@import "../../fonts/Passero_One/PasseroOne-Regular.css";
+@import "compass";
+
+
+#main1 {
+
+  background-image: url("../../images/Email-hero-promote-webinar.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  #content {
+    @include background(linear-gradient(120deg, transparentize(#c0c0c0, 0.1), transparentize(#c0c0c0, 0.08), transparentize(#c0c0c0, 0.1)));
+  }
+
+  #content {
+    span, span:hover {
+      font-family: AtomicAge-Regular, Arial, Helvetica Neue, Helvetica, sans-serif;
+      font-size: 0.95em;
+      color: #000000;
+    }
+    i, i:hover {
+      color: #c82333;
+      text-decoration: none;
+    }
+    a {
+      text-decoration: none!important;
+      color: #000000//#c82333;
+    }
+    div.userActions{
+      font-family: AtomicAge-Regular, Arial, Helvetica Neue, Helvetica, sans-serif;
+      font-size: 0.8em;
+    }
+  }
+
+  #home_intro{
+    div.icon {
+
+      h1{
+        font-size: 8em;
+        font-family: Orbitron-Regular, Arial, Helvetica Neue, Helvetica, sans-serif;
+        padding: 0!important;
+        color: #000;
+      }
+
+      div.top{
+        margin: -7px!important;
+        font-family: PasseroOne-Regular, Bungee-Regular, AtomicAge-Regular, Arial, Helvetica Neue, Helvetica, sans-serif;
+        padding-right: 18px;
+        letter-spacing: 1px;
+        color: #000000;
+      }
+
+      div.down{
+        margin: -35px!important;
+        font-family: PasseroOne-Regular, Bungee-Regular, AtomicAge-Regular, Arial, Helvetica Neue, Helvetica, sans-serif;
+        padding-right: 45px;
+        letter-spacing: 1.6px;
+        font-size: 2.5em;
+        color: #c82333; //#89050c;
+      }
+
+      div.info{
+        font-family: PasseroOne-Regular, Arial, Helvetica Neue, Helvetica, sans-serif;
+        letter-spacing: 1px;
+      }
+    }
+
+    div.word {
+      //background-color: #c0c0c0;
+      font-family: PasseroOne-Regular, Arial, Helvetica Neue, Helvetica, sans-serif;
+    }
+  }
+
+  #content {
+    text-align: center;
+    header {
+      span{
+        //vertical-align: text-top!important;
+        font-family: AtomicAge-Regular, Arial, Helvetica Neue, Helvetica, sans-serif;
+        font-size: 1.4em;
+        padding-left: 1em;
+      }
+    }
+  }
+}
+
+
+#main2 {
+  @include background(linear-gradient(120deg, transparentize(#dd2035, 0.2), transparentize(#fdae16, 0.2)));
+}
