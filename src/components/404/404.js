@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Row} from '../lib/index';
+import {Row} from '../lib/containers';
 import {BrowserRouter as Router} from 'react-router-dom';
 
 export default class FourOhFour extends Component{
