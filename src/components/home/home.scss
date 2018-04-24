@@ -3,37 +3,59 @@
 @import "../../fonts/Bungee/Bungee-Regular.css";
 @import "../../fonts/Orbitron/Orbitron-Regular.css";
 @import "../../fonts/Passero_One/PasseroOne-Regular.css";
+@import "../../fonts/IM_Fell_DW_Pica_SC/IMFePIsc28P.css";
+@import "../../fonts/Geo/Geo-Regular.css";
+@import "../../fonts/Grand_Hotel/GrandHotel-Regular.css";
+@import "../../fonts/Iceberg/Iceberg-Regular.css";
+@import "../../fonts/Iceland/Iceland-Regular.css";
 @import "compass";
 
 
 #main1 {
 
-  background-image: url("../../images/Email-hero-promote-webinar.png");
-  background-repeat: no-repeat;
+  background-image: url('../../images/work.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
 
   #content {
-    @include background(linear-gradient(120deg, transparentize(#c0c0c0, 0.1), transparentize(#c0c0c0, 0.08), transparentize(#c0c0c0, 0.1)));
-  }
 
-  #content {
-    span, span:hover {
-      font-family: AtomicAge-Regular, Arial, Helvetica Neue, Helvetica, sans-serif;
-      font-size: 0.95em;
-      color: #000000;
+    z-index: 10;
+    @include background(linear-gradient(120deg, transparentize(#424242, 0.2), transparentize(#343434, 0.15), transparentize(#040404, 0.2)));
+
+    div.name{
+      font-family: Geo-Regular, Arial, "Helvetica Neue", Helvetica, sans-serif;
+      letter-spacing:0.8px;
+      word-spacing: 2px;
+      font-size: 1.2em;
+      //color: #fa0916;
     }
-    i, i:hover {
-      color: #c82333;
-      text-decoration: none;
+
+    div.intro {
+      h1 {
+        font-family: IMFePIsc28P, Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 4em;
+        color: #dd2035; // #cc3366;
+      }
+      h5 {
+        font-family: Geo-Regular, Arial, "Helvetica Neue", Helvetica, sans-serif;
+        letter-spacing: 1.5px;
+        margin-left: 30px!important;
+        margin-top: -10px!important;
+        border-top: 2px solid #dd2035;
+        color: #fdae16;
+        //text-align: right;
+      }
     }
-    a {
-      text-decoration: none!important;
-      color: #000000//#c82333;
+
+    div .fabButts{
+      background-color: #fdae16!important;
+      outline: 0;
+      border: 0;
+      svg {
+        fill: #000;
+      }
     }
-    div.userActions{
-      font-family: AtomicAge-Regular, Arial, Helvetica Neue, Helvetica, sans-serif;
-      font-size: 0.8em;
-    }
+
   }
 
   #home_intro{
@@ -86,9 +108,17 @@
       }
     }
   }
+
+  #main2 {
+    //@include background(linear-gradient(120deg, transparentize(#dd2035, 0.2), transparentize(#fdae16, 0.2)));
+    //background-color: white;
+    @include background(linear-gradient(120deg, transparentize(#424242, 0.14), transparentize(#343434, 0.09), transparentize(#040404, 0.07)));
+    #header {
+      //-webkit-clip-path: polygon(100% 14%, 1% 82%, 1% 99%, 100% 99%);
+      clip-path: polygon(100% 25%, 0% 76%, 0% 100%, 100% 100%);
+      background-color:  transparentize(#040505, 0.5);//#c82333;//#89050c;
+    }
+  }
 }
 
 
-#main2 {
-  @include background(linear-gradient(120deg, transparentize(#dd2035, 0.2), transparentize(#fdae16, 0.2)));
-}
