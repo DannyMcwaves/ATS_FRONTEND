@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import {Col, WindowRow, GridFluid, Row, Grid, WindowGrid} from '../lib/index';
+import {Col, WindowRow, GridFluid, Row, Grid, WindowGrid, WindowGridFluid} from '../lib/containers';
 import {connect} from 'react-redux';
-import {Link, Route} from 'react-router-dom';
-import HomeIntro from './home_intro';
-import HomeLogin from './home_login';
-import HomeSignup from './home_signup';
 import './home.scss';
+import image from '../../images/archive.svg';
+// import {Parallax} from 'react-parallax';
+import Button from 'material-ui/Button';
+import {ArrowDownward} from '@material-ui/icons';
 
 class Homepage extends Component {
 
@@ -16,44 +16,35 @@ class Homepage extends Component {
 
   render() {
     return (
-      <div className='main'>
+      <Row className='main'>
 
-        <WindowRow id='main1' className="justify-content-end animated fadeIn">
-          <Col xs={12} className='' id='content'>
-            <GridFluid>
-              <WindowRow>
-                <Grid>
-                  <Row className='pt-3 justify-content-between'>
-                    <Col>
-                      <Link to='/'><i className='fab fa-accusoft'/>
-                        <span className='pl-3'>Applicant Tracking Software</span>
-                      </Link>
-                    </Col>
-                    <Col className='userActions'>
-                      <Link to='/login'><button className='btn btn-sm btn-danger'>login</button></Link>
-                      <Link to='/signup' className='ml-4'><button className='btn btn-sm btn-danger'>signup</button></Link>
-                    </Col>
-                  </Row>
-                </Grid>
-                <WindowGrid div={1.2}>
-                  <Route exact path='/' component={HomeIntro} />
-                  <Route exact path='/login' component={HomeLogin}/>
-                  <Route exact path='/signup' component={HomeSignup}/>
-                </WindowGrid>
+        <div id='main1' className={'col-12'}>
+          <WindowRow div={1.15} id='content' className="justify-content-end animated fadeIn">
+            <Col xs={12} className=''>
+              <GridFluid>
+                <WindowRow div={1.15} className="justify-content-start">
+                  <Col className="align-self-center pl-5 intro text-left animated slideInLeft">
+                    <div className="name text-left"> <img src={image} alt="home icon" width="25px" height="25px" /> Applicant Tracking Software </div>
+                    <h1 className="p-0 m-0">JOB APPLICANT</h1>
+                    <h5 className="p-0 m-0">AND REQUIREMENTS ANALYTICS SOLUTIONS</h5>
+                  </Col>
+                  <Col sm={6} className="align-self-end order-md-8 animated text-right slideInUp">
+                    <Button variant='fab' className="fabButts" color='secondary'> <ArrowDownward/> </Button>
+                  </Col>
+                </WindowRow>
+              </GridFluid>
+            </Col>
+          </WindowRow>
+          <WindowRow id='main2' className="justify-content-center align-items-center animated fadeIn">
+            <WindowGridFluid>
+              <WindowRow id='header'>
+                this is a row.
               </WindowRow>
-            </GridFluid>
-          </Col>
-        </WindowRow>
+            </WindowGridFluid>
+          </WindowRow>
+        </div>
 
-        <WindowRow id='main2' className="justify-content-center align-items-center animated fadeIn">
-          <Grid id='header'>
-            <Row>
-              this is a row.
-            </Row>
-          </Grid>
-
-        </WindowRow>
-      </div>
+      </Row>
     )
   }
 
