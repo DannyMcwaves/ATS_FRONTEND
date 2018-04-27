@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Col, WindowRow, /**GridFluid, Row, Grid, WindowGrid*/} from '../lib/index';
+import {Col, WindowRow, /**GridFluid, Row, Grid, WindowGrid*/} from '../lib/containers';
 
 
 export default class HomeIntro extends Component {
