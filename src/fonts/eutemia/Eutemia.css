@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Eutemia";
+    src: url("Eutemia.eot"); /* IE9 */
+    src: url("Eutemia.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("Eutemia.woff") format("woff"), /* chrome, firefox */
+    url("Eutemia.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("Eutemia.svg#Eutemia") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
