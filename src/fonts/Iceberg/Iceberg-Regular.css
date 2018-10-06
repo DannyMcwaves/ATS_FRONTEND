@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Iceberg-Regular";
+    src: url("Iceberg-Regular.eot"); /* IE9 */
+    src: url("Iceberg-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("Iceberg-Regular.woff") format("woff"), /* chrome, firefox */
+    url("Iceberg-Regular.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("Iceberg-Regular.svg#Iceberg-Regular") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
