@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "GrandHotel-Regular";
+    src: url("GrandHotel-Regular.eot"); /* IE9 */
+    src: url("GrandHotel-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("GrandHotel-Regular.woff") format("woff"), /* chrome, firefox */
+    url("GrandHotel-Regular.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("GrandHotel-Regular.svg#GrandHotel-Regular") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
