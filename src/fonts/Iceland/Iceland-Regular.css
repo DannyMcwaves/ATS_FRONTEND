@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Iceland-Regular";
+    src: url("Iceland-Regular.eot"); /* IE9 */
+    src: url("Iceland-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("Iceland-Regular.woff") format("woff"), /* chrome, firefox */
+    url("Iceland-Regular.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("Iceland-Regular.svg#Iceland-Regular") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
